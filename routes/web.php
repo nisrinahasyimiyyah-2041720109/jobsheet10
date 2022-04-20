@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::resource('articles', ArticleController::class);
+
+//Route untuk menjalankan fungsi cetak pdf
+Route::get('/article/cetak_pdf', [ArticleController::class, 'cetak_pdf']);
